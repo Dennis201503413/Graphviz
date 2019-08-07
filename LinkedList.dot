@@ -1,0 +1,12 @@
+digraph firstGraph{
+node [shape=record, width=2.3, height=0.6];
+edge [tailclip=false];
+rankdir=LR; //Left to Right
+  node1 [label="{<n> Dennis |<p>}"];
+  node2 [label="{<n> Alejandro |<p>}"];
+  node3 [label="{<n> Masaya |<p>}"];
+  null[shape=diamond];
+  node1:p:c -> node2:n [ arrowtail=dot, arrowhead=vee, dir=both ];
+  node2:p:c -> node3:n [ arrowtail=dot, arrowhead=vee, dir=both];
+  node3:p:c -> null [arrowtail=dot, arrowhead=vee, dir=both];
+}
